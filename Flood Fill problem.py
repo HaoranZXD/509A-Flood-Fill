@@ -32,8 +32,7 @@ def invalid_length(input_board: list[str]) -> bool:
     for s in input_board:
         if len(s) != len(input_board[0]):
             return True
-    return
-    False
+    return False
 
 
 modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
